@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Blog de Yeyo</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+	  <%= link_to "Logo", "", class: "btn btn-lg btn-success", id: "logo" %>
+	  <div class="nav_item">
+		  <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+	  </div>
+	  <div class="nav_item">
+		  <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+	  </div>
+	  <div class="nav_item">
+		  <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+	  </div>
+  </div>
+</nav>
+<div class="container">
+	<%= yield %>
+	<div class="footer">
+		<p>&copy; Blog de Yeyo 2015 </p>
+	</div>
+</div>
 </body>
 </html>
